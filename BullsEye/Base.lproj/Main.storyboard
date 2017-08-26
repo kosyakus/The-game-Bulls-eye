@@ -1,26 +1,234 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="BullsEye" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="luxfon.com_1026" translatesAutoresizingMaskIntoConstraints="NO" id="03x-YN-dpd">
+                                <rect key="frame" x="0.0" y="0.0" width="736" height="414"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Put the scroll as close as you can to:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="prH-m7-Xkd">
+                                <rect key="frame" x="122" y="30" width="325" height="23"/>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter-Semibold" family="American Typewriter" pointSize="19"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="1" green="1" blue="1" alpha="0.5" colorSpace="calibratedRGB"/>
+                                <size key="shadowOffset" width="0.0" height="1"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oiN-Dg-Ixt">
+                                <rect key="frame" x="463" y="30" width="35" height="23"/>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter-Semibold" family="American Typewriter" pointSize="19"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="1" green="1" blue="1" alpha="0.5" colorSpace="calibratedRGB"/>
+                                <size key="shadowOffset" width="0.0" height="1"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="50" minValue="1" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="BIQ-ez-NxZ">
+                                <rect key="frame" x="101" y="75" width="366" height="31"/>
+                                <connections>
+                                    <action selector="sliderMoved:" destination="BYZ-38-t0r" eventType="valueChanged" id="nXf-X0-QPK"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vbM-a2-VpV">
+                                <rect key="frame" x="80" y="80" width="13" height="23"/>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter-Semibold" family="American Typewriter" pointSize="19"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="1" green="1" blue="1" alpha="0.5" colorSpace="calibratedRGB"/>
+                                <size key="shadowOffset" width="0.0" height="1"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2jR-P0-TEO">
+                                <rect key="frame" x="473" y="80" width="35" height="23"/>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter-Semibold" family="American Typewriter" pointSize="19"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="1" green="1" blue="1" alpha="0.5" colorSpace="calibratedRGB"/>
+                                <size key="shadowOffset" width="0.0" height="1"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pUb-7Q-3CB">
+                                <rect key="frame" x="35" y="228" width="104" height="32"/>
+                                <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="19"/>
+                                <state key="normal" title="Start over">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="startOver:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CsH-17-9GY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ELk-qW-YCj">
+                                <rect key="frame" x="481" y="228" width="42" height="32"/>
+                                <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="19"/>
+                                <state key="normal" title="info">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="IRv-gX-pWO" kind="show" id="ZIu-xo-dXh"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UEQ-Cf-aFb">
+                                <rect key="frame" x="164" y="232" width="57" height="23"/>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter-Semibold" family="American Typewriter" pointSize="19"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="1" green="1" blue="1" alpha="0.5" colorSpace="calibratedRGB"/>
+                                <size key="shadowOffset" width="0.0" height="1"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="999999" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cr4-g5-Iy0">
+                                <rect key="frame" x="231" y="232" width="73" height="23"/>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter-Semibold" family="American Typewriter" pointSize="19"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="1" green="1" blue="1" alpha="0.5" colorSpace="calibratedRGB"/>
+                                <size key="shadowOffset" width="0.0" height="1"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Round:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="syt-JX-Rlw">
+                                <rect key="frame" x="319" y="232" width="65" height="23"/>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter-Semibold" family="American Typewriter" pointSize="19"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="1" green="1" blue="1" alpha="0.5" colorSpace="calibratedRGB"/>
+                                <size key="shadowOffset" width="0.0" height="1"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="999" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NjW-kH-aZc">
+                                <rect key="frame" x="404" y="232" width="37" height="23"/>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter-Semibold" family="American Typewriter" pointSize="19"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="1" green="1" blue="1" alpha="0.5" colorSpace="calibratedRGB"/>
+                                <size key="shadowOffset" width="0.0" height="1"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AsA-0q-ze9">
+                                <rect key="frame" x="234" y="135" width="100" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="HQ8-tX-T78"/>
+                                    <constraint firstAttribute="width" constant="100" id="MXS-Q6-xWu"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="19"/>
+                                <state key="normal" title="Hit me!" backgroundImage="Button-Normal">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="showAlert" destination="BYZ-38-t0r" eventType="touchUpInside" id="qr9-Fb-pRq"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="syt-JX-Rlw" firstAttribute="leading" secondItem="Cr4-g5-Iy0" secondAttribute="trailing" constant="15" id="4eP-e0-6kl"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="pUb-7Q-3CB" secondAttribute="bottom" constant="60" id="6aA-TZ-THI"/>
+                            <constraint firstItem="NjW-kH-aZc" firstAttribute="leading" secondItem="syt-JX-Rlw" secondAttribute="trailing" constant="20" id="7QV-SS-Qjs"/>
+                            <constraint firstItem="2jR-P0-TEO" firstAttribute="leading" secondItem="BIQ-ez-NxZ" secondAttribute="trailing" constant="8" symbolic="YES" id="BBE-k6-8Eq"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="UEQ-Cf-aFb" secondAttribute="bottom" constant="65" id="F4I-aj-Q5s"/>
+                            <constraint firstItem="BIQ-ez-NxZ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="75" id="FkF-rp-33x"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="NjW-kH-aZc" secondAttribute="bottom" constant="65" id="Ple-rw-8mC"/>
+                            <constraint firstItem="UEQ-Cf-aFb" firstAttribute="leading" secondItem="pUb-7Q-3CB" secondAttribute="trailing" constant="25" id="XTo-ih-iRn"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="NjW-kH-aZc" secondAttribute="bottom" constant="65" id="Xhk-s1-9LD"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Cr4-g5-Iy0" secondAttribute="bottom" constant="65" id="Zzb-BC-dxa"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ELk-qW-YCj" secondAttribute="trailing" constant="25" id="aTg-b8-3aN"/>
+                            <constraint firstItem="AsA-0q-ze9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aj6-E5-rDU"/>
+                            <constraint firstItem="pUb-7Q-3CB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="15" id="bEt-oB-owb"/>
+                            <constraint firstItem="BIQ-ez-NxZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cf4-OF-WsL"/>
+                            <constraint firstItem="vbM-a2-VpV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="60" id="d2f-dk-51a"/>
+                            <constraint firstItem="syt-JX-Rlw" firstAttribute="baseline" secondItem="Cr4-g5-Iy0" secondAttribute="firstBaseline" id="dJg-an-LCS"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ELk-qW-YCj" secondAttribute="bottom" constant="60" id="kFk-zz-zwJ"/>
+                            <constraint firstItem="prH-m7-Xkd" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="30" id="ot3-iE-WMG"/>
+                            <constraint firstItem="prH-m7-Xkd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pg2-UT-JUu"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="oiN-Dg-Ixt" secondAttribute="trailing" constant="50" id="qbH-Nv-NmV"/>
+                            <constraint firstItem="AsA-0q-ze9" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="qor-6D-C75"/>
+                            <constraint firstItem="vbM-a2-VpV" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="80" id="rRH-JP-sHF"/>
+                            <constraint firstItem="oiN-Dg-Ixt" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="30" id="u9a-U0-rCy"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="2jR-P0-TEO" secondAttribute="trailing" constant="40" id="w9P-Qw-mXi"/>
+                            <constraint firstItem="Cr4-g5-Iy0" firstAttribute="leading" secondItem="UEQ-Cf-aFb" secondAttribute="trailing" constant="10" id="wtp-fN-W6c"/>
+                            <constraint firstItem="2jR-P0-TEO" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="80" id="xfT-mN-x39"/>
+                        </constraints>
                     </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <connections>
+                        <outlet property="roundLabel" destination="NjW-kH-aZc" id="RYz-NV-joJ"/>
+                        <outlet property="scoreLabel" destination="Cr4-g5-Iy0" id="eYx-30-7h7"/>
+                        <outlet property="slider" destination="BIQ-ez-NxZ" id="Twe-sD-KQO"/>
+                        <outlet property="targetLabel" destination="oiN-Dg-Ixt" id="gPn-gM-UaQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="23.64130434782609" y="20.289855072463769"/>
+        </scene>
+        <!--About View Controller-->
+        <scene sceneID="RHm-y2-j7T">
+            <objects>
+                <viewController id="IRv-gX-pWO" customClass="AboutViewController" customModule="BullsEye" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="SPe-D7-P90"/>
+                        <viewControllerLayoutGuide type="bottom" id="5JP-Qp-VHG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fq3-sF-niY">
+                        <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="luxfon.com_1026" translatesAutoresizingMaskIntoConstraints="NO" id="DgW-lC-htn">
+                                <rect key="frame" x="-11" y="0.0" width="747" height="414"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Aw-4n-Mx4">
+                                <rect key="frame" x="260" y="226" width="48" height="34"/>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter-Semibold" family="American Typewriter" pointSize="19"/>
+                                <state key="normal" title="Close">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="close" destination="IRv-gX-pWO" eventType="touchUpInside" id="by2-U6-Wzo"/>
+                                </connections>
+                            </button>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RQ3-2T-vUz">
+                                <rect key="frame" x="59" y="30" width="450" height="200"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="UfU-op-CFs"/>
+                                    <constraint firstAttribute="width" constant="450" id="i38-B0-QI6"/>
+                                </constraints>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="RQ3-2T-vUz" firstAttribute="centerX" secondItem="fq3-sF-niY" secondAttribute="centerX" id="a56-UD-qWK"/>
+                            <constraint firstItem="RQ3-2T-vUz" firstAttribute="top" secondItem="SPe-D7-P90" secondAttribute="bottom" constant="30" id="kFu-ZD-2Zt"/>
+                            <constraint firstItem="5JP-Qp-VHG" firstAttribute="top" secondItem="3Aw-4n-Mx4" secondAttribute="bottom" constant="60" id="lTF-po-77n"/>
+                            <constraint firstItem="3Aw-4n-Mx4" firstAttribute="centerX" secondItem="fq3-sF-niY" secondAttribute="centerX" id="xtY-bg-Anp"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="webView" destination="RQ3-2T-vUz" id="gQa-qI-eAL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uOO-ic-nWF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="662.77173913043487" y="20.289855072463769"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Button-Normal" width="100" height="37"/>
+        <image name="luxfon.com_1026" width="3333" height="2176"/>
+    </resources>
 </document>
